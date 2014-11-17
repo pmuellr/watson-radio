@@ -1,0 +1,6 @@
+env.json
+vcap.json
+
+bower_components
+node_modules
+tmp

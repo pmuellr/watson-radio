@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>Cognitive enabled Car Entertainment Center</title>
+    <link href="css/index.css" type="text/css" rel="stylesheet" media="all">
+
+    <script src="bower/jquery/jquery.min.js" />
+    <script>
+        // put this script in between the <head> tags of your document
+        $(document).ready(function () {
+            $(".content").hide(); // hides the content DIV
+        });
+    </script>
+    <script type="text/javascript">
+        // when all elements of the page are completely loaded, script below executes
+        $(window).load(function () {
+            //$(".spinner").fadeOut("slow"); // loading DIV fades out
+            $('.spinner').fadeOut(2000);
+            $(".content").fadeIn(2000); // content DIV fades in
+        });
+    </script>
+
+</head>
+
+<body>
+    <!-- div for loading content, ensure this is outside of the content wrapper -->
+    <div class="spinner">
+        <img src="images/watsonSpinSlow.gif" />
+        <h2>Welcome, John Smith ! </h2>
+        <h3>Watson is analyzing your Tweets ....</h3>
+        <p>... recommending appropriate radio stations you may like</p>
+    </div>
+    <div id="content">
+    <section class="wrapper">
+        <section class="page">
+            <header>
+                <nav class="quick-links">
+                    <a href=""><span class="entypo-cog"></span></a>
+                </nav>
+                Welcome, John Smith
+                <nav class="backlink">
+                    <a href=""><span class=""><img src="images/logo.png" style="zoom: 0.6;"/></span></a>
+                </nav>
+            </header>
+            <section class="content">
+                <a class="item" href="radio.html">
+                    <span class="entypo-note"></span>
+                    <br />Music
+                </a>
+                <a class="item" href="#">
+                    <span class="entypo-direction"></span>
+                    <br />Maps
+                </a>
+                <a class="item" href="#">
+                    <span class="entypo-phone"></span>
+                    <br />Phone &amp; Call
+                </a>
+                <a class="item" href="#">
+                    <span class="entypo-tag"></span>
+                    <br />Voice
+                </a>
+                <a class="item" href="#">
+                    <span class="entypo-chat"></span>
+                    <br />Messages
+                </a>
+                <a class="item" href="#">
+                    <span class="entypo-vcard"></span>
+                    <br />Contacts
+                </a>
+                <a class="item" href="#">
+                    <span class="entypo-adjust"></span>
+                    <br />Temperature
+                </a>
+                <a class="item" href="#">
+                    <span class="entypo-eye"></span>
+                    <br />Find Parking
+                </a>
+                <a class="item" href="#">
+                    <span class="entypo-users"></span>
+                    <br />Concierge
+                </a>
+            </section>
+        </section>
+    </section>
+    </div>
+
+</body>
+
+</html>

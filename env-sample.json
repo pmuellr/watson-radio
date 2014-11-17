@@ -1,0 +1,11 @@
+{
+  "comment": [
+    "To run locally, copy this file to `env.json` (listed in .gitignore/.cfignore)",
+    "and replace the angle-bracketed (<>) strings with actual values"
+  ],
+
+  "TWITTER_CONSUMER_KEY":         "<twitter consumer key>",
+  "TWITTER_CONSUMER_SECRET":      "<twitter consumer secret>",
+
+  "TRACKS8_API_KEY":              "<8tracks api key>"
+}

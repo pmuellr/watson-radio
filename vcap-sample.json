@@ -1,0 +1,19 @@
+{
+  "comment": [
+    "To run locally, copy this file to `vcap.json` (listed in .gitignore/.cfignore)",
+    "and replace the angle-bracketed (<>) strings with actual values"
+  ],
+
+  "services": {
+    "user_modeling": [
+      {
+        "name": "watson-um",
+        "credentials": {
+          "url":      "<watson user-modelling service url here>",
+          "username": "<watson user-modelling service username here>",
+          "password": "<watson user-modelling service password here>"
+        }
+      }
+    ]
+  }
+}

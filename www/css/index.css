@@ -1,0 +1,179 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background: #FFFFFF;
+  font-size: 15px;
+  padding: 1.333em;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  border-radius: 1em;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+.wrapper .main-nav {
+  width: 0%;
+  float: left;
+  min-height: 100%;
+  background: #3A3A3C;
+  overflow: hidden;
+  border-radius: 0 0 0 1em;
+}
+.wrapper .main-nav a {
+  display: block;
+  height: 3em;
+  line-height: 3em;
+  font-size: 1.333em;
+  padding: 0 1.5em;
+}
+.wrapper .main-nav a span {
+  display: inline-block;
+  margin-right: 1em;
+}
+.wrapper .main-nav a.active, .wrapper .main-nav a:hover {
+  background-color: #222222;
+}
+.wrapper .page {
+  float: right;
+  width: 100%;
+  box-shadow: 0px 0px 20px #222222;
+}
+.wrapper .page header {
+  background: #3A3A3C;
+  height: 3em;
+  line-height: 3em;
+  font-size: 1.333em;
+  text-align: center;
+  position: relative;
+}
+.wrapper .page header .quick-links {
+  font-size: 1.5em;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.wrapper .page header .quick-links a {
+  display: block;
+  float: left;
+  padding: 0 0.5em;
+}
+.wrapper .page header .quick-links a.active, .wrapper .page header .quick-links a:hover {
+  background: #222222;
+}
+.wrapper .page header .quick-links:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrapper .page header .backlink {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.5em;
+}
+.wrapper .page header .backlink a {
+  display: block;
+  padding: 0 0.5em;
+}
+.wrapper .page header .backlink a.active, .wrapper .page header .backlink a:hover {
+  background: #222222;
+}
+.wrapper .page .content {
+  box-shadow: inset 0 5px 5px -5px #222222;
+
+
+ /* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+
+/* IE10 Consumer Preview */
+background-image: -ms-linear-gradient(top right, #428BCA 0%, #357EBD 100%);
+
+/* Mozilla Firefox */
+background-image: -moz-linear-gradient(top right, #428BCA 0%, #357EBD 100%);
+
+/* Opera */
+background-image: -o-linear-gradient(top right, #428BCA 0%, #357EBD 100%);
+
+/* Webkit (Safari/Chrome 10) */
+background-image: -webkit-gradient(linear, right top, left bottom, color-stop(0, #428BCA), color-stop(1, #357EBD));
+
+/* Webkit (Chrome 11+) */
+background-image: -webkit-linear-gradient(top right, #428BCA 0%, #357EBD 100%);
+
+/* W3C Markup, IE10 Release Preview */
+background-image: linear-gradient(to bottom left, #428BCA 0%, #357EBD 100%);
+
+}
+.wrapper .page .content .item {
+  float: left;
+  display: block;
+  width: 33%;
+  text-align: center;
+  height: auto;
+  font-size: 1.5em;
+  padding: 1em 0em;
+  text-transform: uppercase;
+}
+.wrapper .page .content .item span {
+  font-size: 3em;
+}
+.wrapper .page .content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.item {
+  border:1px solid rgba(0,0,0,.2); border-radius:1px;
+  overflow:hidden;
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -ms-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+}
+
+.item:hover {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.spinner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* margin-left: -720px; /* half width of the spinner gif */
+    /* margin-top: -400px; /* half height of the spinner gif */
+    text-align:center;
+    z-index:1234;
+    overflow: auto;
+    width: 100%; /* width of the spinner gif */
+    height: 100%; /*hight of the spinner gif +2px to fix IE8 issue */
+    background: #333;
+    opacity: 0.9    ;
+}
